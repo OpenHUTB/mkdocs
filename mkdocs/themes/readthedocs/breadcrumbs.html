@@ -15,7 +15,7 @@
       {%- block repo %}
       {%- if page and page.edit_url %}
         {%- if config.repo_name|lower == 'github' %}
-          <a href="{{ page.edit_url }}" class="icon icon-github"> {% trans repo_name=config.repo_name %}Edit on {{ repo_name }}{% endtrans %}</a>
+          <a href="{{ page.edit_url }}" class="icon icon-github"> {% trans repo_name=config.repo_name %}在 {{ repo_name }} 上编辑{% endtrans %}</a>
         {%- elif config.repo_name|lower == 'bitbucket' %}
           <a href="{{ page.edit_url }}" class="icon icon-bitbucket"> {% trans repo_name=config.repo_name %}Edit on {{ repo_name }}{% endtrans %}</a>
         {%- elif config.repo_name|lower == 'gitlab' %}

@@ -4,10 +4,10 @@
         and page and (page.next_page or page.previous_page) %}
     <div class="rst-footer-buttons" role="navigation" aria-label="{% trans %}Footer Navigation{% endtrans %}">
       {%- if page.previous_page %}
-        <a href="{{ page.previous_page.url|url }}" class="btn btn-neutral float-left" title="{{ page.previous_page.title }}"><span class="icon icon-circle-arrow-left"></span> {% trans %}Previous{% endtrans %}</a>
+        <a href="{{ page.previous_page.url|url }}" class="btn btn-neutral float-left" title="{{ page.previous_page.title }}"><span class="icon icon-circle-arrow-left"></span> {% trans %}前一页{% endtrans %}</a>
       {%- endif %}
       {%- if page.next_page %}
-        <a href="{{ page.next_page.url|url }}" class="btn btn-neutral float-right" title="{{ page.next_page.title }}">{% trans %}Next{% endtrans %} <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="{{ page.next_page.url|url }}" class="btn btn-neutral float-right" title="{{ page.next_page.title }}">{% trans %}后一页{% endtrans %} <span class="icon icon-circle-arrow-right"></span></a>
       {%- endif %}
     </div>
   {%- endif %}
