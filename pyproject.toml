@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mkdocs"
+name = "hutb_doc"
 description = "Project documentation with Markdown."
 readme = "README.md"
 license = "BSD-2-Clause"
@@ -96,6 +96,7 @@ artifacts = ["/mkdocs/**/*.mo"]
 include = ["/mkdocs"]
 [tool.hatch.build.targets.wheel]
 exclude = ["/mkdocs/tests", "*.po", "*.pot", "babel.cfg"]
+packages = ["mkdocs"]
 [tool.hatch.build.hooks.custom]
 dependencies = [
     "babel",
