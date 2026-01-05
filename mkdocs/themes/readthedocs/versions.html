@@ -18,10 +18,10 @@
         </span>
     {% endif %}
     {% if page.previous_page %}
-      <span><a href="{{ page.previous_page.url|url }}" style="color: #fcfcfc">&laquo; {% trans %}Previous{% endtrans %}</a></span>
+      <span><a href="{{ page.previous_page.url|url }}" style="color: #fcfcfc">&laquo; {% trans %}前一页{% endtrans %}</a></span>
     {% endif %}
     {% if page.next_page %}
-      <span><a href="{{ page.next_page.url|url }}" style="color: #fcfcfc">{% trans %}Next{% endtrans %} &raquo;</a></span>
+      <span><a href="{{ page.next_page.url|url }}" style="color: #fcfcfc">{% trans %}下一页{% endtrans %} &raquo;</a></span>
     {% endif %}
   </span>
 </div>
