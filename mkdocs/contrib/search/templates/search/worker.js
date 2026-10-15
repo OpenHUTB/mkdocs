@@ -44,7 +44,7 @@ function onJSONLoaded () {
     if (lang.length > 1) {
       scriptsToLoad.push('lunr.multi.js');
     }
-    if (lang.includes("ja") || lang.includes("jp")) {
+    if (lang.includes("ja") || lang.includes("jp") || lang.includes("zh")) {
       scriptsToLoad.push('tinyseg.js');
     }
     for (var i=0; i < lang.length; i++) {

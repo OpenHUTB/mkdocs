@@ -108,7 +108,7 @@ class SearchPlugin(BasePlugin[_PluginConfig]):
                 files.append('lunr.stemmer.support.js')
             if len(self.config.lang) > 1:
                 files.append('lunr.multi.js')
-            if 'ja' in self.config.lang or 'jp' in self.config.lang:
+            if 'ja' in self.config.lang or 'jp' in self.config.lang or 'zh' in self.config.lang:
                 files.append('tinyseg.js')
             for lang in self.config.lang:
                 if lang != 'en':
